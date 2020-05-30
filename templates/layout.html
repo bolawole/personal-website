@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen+Mono&family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/main.css')}}">
+
+    
+    <title>Devwall</title>
+</head>
+<body>
+   
+    <header>
+        <nav class="nav-links">
+            <div class="nav-bar">
+                
+            <ul>
+                <li class="nav-link"><a href="{{url_for('portfolio')}}">My Works</a></li>
+                <li class="nav-link"><a href="{{url_for('resume')}}">resume</a></li>
+                <li class="nav-link"><a href="#skills">skills</a></li>
+                <li class="nav-link"><a href="#">ABOUT</a></li>
+               
+            </ul>
+        </div>
+            <div class="hamburger-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+
+            </div>
+        </nav>
+        <h1 id="heading_title">DEV <span id="heading_name" style="display: inline; letter-spacing: 5px;">WALL</span><span id="cursor">|</span></h1>
+        
+            {%block heading_title%}
+           
+            {%endblock%}
+        </header>
+    
+{%block body%}
+{%endblock%}
+<footer id="footer">
+    <ul class="footlist">
+        <li><a href=""><i class="fab fa-linkedin-in f-icon"></i></a></li>
+        <li><a href=""><i class="fa fa-envelope f-icon"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram f-icon"></i></a></li>
+    </ul>
+
+</footer>
+
+<script src="{{url_for('static',filename='javascripts/scripts.js')}}"></script>
+</body>
+</html>
